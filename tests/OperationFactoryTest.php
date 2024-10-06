@@ -8,6 +8,7 @@ use Smenaquispe\Mathly\OperationFactory;
 class OperationFactoryTest extends TestCase 
 {
     /** @test */
+    
     public function it_returns_first_number() 
     {
         $operation = new OperationFactory([1]);
