@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Smenaquispe\\Mathly\\Tests\\OperationFactoryTest::it_returns_first_number":8},"times":{"Smenaquispe\\Mathly\\Tests\\OperationFactoryTest::it_returns_a_single_number":0.003,"Smenaquispe\\Mathly\\Tests\\OperationFactoryTest::it_returns_first_number":0.005}}
