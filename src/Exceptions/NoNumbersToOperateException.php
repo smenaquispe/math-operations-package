@@ -1,13 +1,30 @@
 <?php
-  namespace Smenaquispe\Mathly\Exceptions;
-  
-  use InvalidArgumentException;
-  
-  class NoNumbersToOperateException extends InvalidArgumentException
-  {
-      public static function create()
-      {
+
+namespace Smenaquispe\Mathly\Exceptions;
+
+use InvalidArgumentException;
+
+/**
+ * Class NoNumbersToOperateException
+ *
+ * Exception thrown when no numbers are provided for mathematical operations.
+ *
+ * @category Math
+ * @package  Smenaquispe\Mathly\Exceptions
+ * @author   Tu Nombre <tu.email@example.com>
+ * @license  MIT
+ * @link     http://example.com
+ */
+class NoNumbersToOperateException extends InvalidArgumentException
+{
+    /**
+     * Creates a new instance of NoNumbersToOperateException.
+     *
+     * @return NoNumbersToOperateException The exception instance.
+     */
+    public static function create()
+    {
         return new static("There are not any numbers to operate");
-      }
-  }
+    }
+}
 ?>
