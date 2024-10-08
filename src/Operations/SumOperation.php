@@ -6,14 +6,15 @@ use Smenaquispe\Mathly\Contracts\MathOperation;
 use Smenaquispe\Mathly\Exceptions\NoNumbersToOperateException;
 
 /**
- * Class SumOperation
+ * Class SumOperation.
  *
  * Implements the addition operation defined by the MathOperation interface.
  *
  * @category Math
- * @package  Smenaquispe\Mathly\Operations
+ *
  * @author   Tu Nombre <tu.email@example.com>
  * @license  MIT
+ *
  * @link     http://example.com
  */
 class SumOperation implements MathOperation
@@ -21,8 +22,9 @@ class SumOperation implements MathOperation
     /**
      * Executes the addition operation on the given numbers.
      *
-     * @param float ...$numbers The numbers to add.
+     * @param  float  ...$numbers  The numbers to add.
      * @return float The result of the addition.
+     *
      * @throws NoNumbersToOperateException If no numbers are provided for the operation.
      */
     public function run(float ...$numbers): float
@@ -34,4 +36,3 @@ class SumOperation implements MathOperation
         return array_sum($numbers);
     }
 }
-?>
