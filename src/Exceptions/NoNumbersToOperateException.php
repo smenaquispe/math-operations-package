@@ -5,14 +5,15 @@ namespace Smenaquispe\Mathly\Exceptions;
 use InvalidArgumentException;
 
 /**
- * Class NoNumbersToOperateException
+ * Class NoNumbersToOperateException.
  *
  * Exception thrown when no numbers are provided for mathematical operations.
  *
  * @category Math
- * @package  Smenaquispe\Mathly\Exceptions
+ *
  * @author   Tu Nombre <tu.email@example.com>
  * @license  MIT
+ *
  * @link     http://example.com
  */
 class NoNumbersToOperateException extends InvalidArgumentException
@@ -24,7 +25,6 @@ class NoNumbersToOperateException extends InvalidArgumentException
      */
     public static function create()
     {
-        return new static("There are not any numbers to operate");
+        return new static('There are not any numbers to operate');
     }
 }
-?>

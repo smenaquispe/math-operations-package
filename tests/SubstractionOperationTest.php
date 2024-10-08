@@ -3,13 +3,13 @@
 namespace Smenaquispe\Mathly\Tests;
 
 use PHPUnit\Framework\TestCase;
-use Smenaquispe\Mathly\Operations\SubstractionOperation;
 use Smenaquispe\Mathly\Exceptions\NoNumbersToOperateException;
+use Smenaquispe\Mathly\Operations\SubstractionOperation;
 
-class SubstractionOperationTest extends TestCase 
+class SubstractionOperationTest extends TestCase
 {
-    /** @test */    
-    public function test_it_throw_exception_if_no_numbers() 
+    /** @test */
+    public function test_it_throw_exception_if_no_numbers()
     {
         $this->expectException(NoNumbersToOperateException::class);
 
@@ -17,21 +17,19 @@ class SubstractionOperationTest extends TestCase
         $substractionOperation->run();
     }
 
-    public function test_it_return_same_number_if_unique() 
+    public function test_it_return_same_number_if_unique()
     {
         $substractionOperation = new SubstractionOperation();
         $result = $substractionOperation->run(10);
-        
+
         $this->assertEquals(10, $result);
     }
 
-    public function test_it_substract_list_of_numbers() 
+    public function test_it_substract_list_of_numbers()
     {
         $substractionOperation = new SubstractionOperation();
         $result = $substractionOperation->run(10, 5, 5, 5);
-        
+
         $this->assertEquals(-5, $result);
     }
 }
-
-?>
