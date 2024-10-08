@@ -1,7 +1,8 @@
 language: php
+dist: focal
 
 php:
-  - 8.3
+  - 8.2
 
 before_script:
   - composer self-update
