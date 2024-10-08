@@ -12,7 +12,7 @@ use Smenaquispe\Mathly\Exceptions\NoNumbersToOperateException;
  *
  * @category Math
  *
- * @author   Tu Nombre <tu.email@example.com>
+ * @author   Sergio Mena <sergiosantosmenaq@gmail.com>
  * @license  MIT
  *
  * @link     http://example.com
