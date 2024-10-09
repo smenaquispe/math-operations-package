@@ -6,7 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Smenaquispe\Mathly\Operations\SubstractionOperation;
 use Smenaquispe\Mathly\Operations\SumOperation;
 
-class MathOperationServiceProvider extends ServiceProvider
+class MathlyServiceProvider extends ServiceProvider
 {
     public function boot()
     {
